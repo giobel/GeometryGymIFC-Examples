@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ifcXML xsi:schemaLocation="http://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/XML/IFC4x1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/ifc/IFC4x1/final">
+  <IfcProject GlobalId="31XxfCr718FeGMu1Tnj4CM" Name="IfcProject">
+    <OwnerHistory id="i10" xsi:type="IfcOwnerHistory" ChangeAction="added" LastModifiedDate="1660186306" CreationDate="1660186306">
+      <OwningUser xsi:type="IfcPersonAndOrganization">
+        <ThePerson xsi:type="IfcPerson" Identification="GBrogiolo" />
+        <TheOrganization xsi:type="IfcOrganization" Name="Unknown" />
+      </OwningUser>
+      <OwningApplication xsi:type="IfcApplication" Version=" v1.0.0.0" ApplicationFullName="ConsoleCreateWall v1.0.0.0" ApplicationIdentifier="ConsoleCreateWall v1.0.0.0">
+        <ApplicationDeveloper xsi:type="IfcOrganization" Name="Geometry Gym Pty Ltd" />
+      </OwningApplication>
+    </OwnerHistory>
+    <IsDecomposedBy>
+      <IfcRelAggregates GlobalId="3CfQp4AfABMi5LekIjTgGw">
+        <OwnerHistory xsi:nil="true" href="i10" />
+        <RelatedObjects>
+          <IfcBuilding GlobalId="3yI1MoEF5Fq8sjlqMx$3CB" Name="IfcBuilding">
+            <OwnerHistory xsi:nil="true" href="i10" />
+            <ObjectPlacement xsi:type="IfcLocalPlacement">
+              <RelativePlacement xsi:type="IfcAxis2Placement3D">
+                <Location xsi:type="IfcCartesianPoint" Coordinates="0 0 0" />
+              </RelativePlacement>
+            </ObjectPlacement>
+            <ContainsElements>
+              <IfcRelContainedInSpatialStructure GlobalId="1PNsaMrP6wWmW5pAyKW5Zl" Name="Building" Description="Building Container for Elements">
+                <OwnerHistory xsi:nil="true" href="i10" />
+                <RelatedElements>
+                  <IfcPile GlobalId="21H8e8tpvFXub_S0in3RLM" Name="P1" Description="A bored 800mm dia pile">
+                    <OwnerHistory xsi:nil="true" href="i10" />
+                    <ObjectPlacement xsi:type="IfcLocalPlacement">
+                      <RelativePlacement xsi:type="IfcAxis2Placement3D">
+                        <Location xsi:type="IfcCartesianPoint" Coordinates="0 0 0" />
+                      </RelativePlacement>
+                    </ObjectPlacement>
+                    <Representation xsi:type="IfcProductDefinitionShape">
+                      <Representations>
+                        <IfcShapeRepresentation RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                          <ContextOfItems xsi:nil="true" href="i29" />
+                          <Items>
+                            <IfcExtrudedAreaSolid Depth="-10">
+                              <SweptArea xsi:type="IfcCircleProfileDef" ProfileType="area" ProfileName="D800" Radius="0.4" />
+                              <ExtrudedDirection xsi:type="IfcDirection" DirectionRatios="0 0 1" />
+                            </IfcExtrudedAreaSolid>
+                          </Items>
+                        </IfcShapeRepresentation>
+                      </Representations>
+                    </Representation>
+                  </IfcPile>
+                </RelatedElements>
+              </IfcRelContainedInSpatialStructure>
+            </ContainsElements>
+            <BuildingAddress xsi:type="IfcPostalAddress" Town="Unknown" PostalCode="Unknown" Country="Unknown">
+              <AddressLines>
+                <IfcLabel-wrapper>Unknown</IfcLabel-wrapper>
+              </AddressLines>
+            </BuildingAddress>
+          </IfcBuilding>
+        </RelatedObjects>
+      </IfcRelAggregates>
+    </IsDecomposedBy>
+    <RepresentationContexts>
+      <IfcGeometricRepresentationContext ContextType="Model" CoordinateSpaceDimension="3" Precision="0.0001">
+        <WorldCoordinateSystem xsi:type="IfcAxis2Placement3D">
+          <Location xsi:type="IfcCartesianPoint" Coordinates="0 0 0" />
+        </WorldCoordinateSystem>
+        <TrueNorth xsi:type="IfcDirection" DirectionRatios="0 1" />
+        <HasSubContexts>
+          <IfcGeometricRepresentationSubContext id="i29" ContextIdentifier="Body" ContextType="Model" TargetView="model_view" />
+        </HasSubContexts>
+      </IfcGeometricRepresentationContext>
+    </RepresentationContexts>
+    <UnitsInContext xsi:type="IfcUnitAssignment">
+      <Units>
+        <IfcSIUnit UnitType="lengthunit" Name="metre" />
+        <IfcSIUnit UnitType="areaunit" Name="square_metre" />
+        <IfcSIUnit UnitType="volumeunit" Name="cubic_metre" />
+        <IfcSIUnit UnitType="planeangleunit" Name="radian" />
+        <IfcSIUnit UnitType="timeunit" Name="second" />
+      </Units>
+    </UnitsInContext>
+  </IfcProject>
+  <IfcRelDefinesByType GlobalId="1IL1zV5VrFT8CU_uN4GW8D" Name="NameNotAssigned">
+    <OwnerHistory xsi:nil="true" href="i10" />
+    <RelatingType xsi:type="IfcPileType" GlobalId="0OBu4m$Wf4ler2IQCO1iCM" Name="Bored Pile">
+      <OwnerHistory xsi:nil="true" href="i10" />
+    </RelatingType>
+  </IfcRelDefinesByType>
+</ifcXML>
